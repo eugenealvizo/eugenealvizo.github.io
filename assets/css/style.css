@@ -1,66 +1,62 @@
 nav.main-nav {
-    padding: 20px 20px 0;
-    margin: 0 auto;
-    text-align: right;
-    z-index: 100;
+  padding: 20px 20px 0;
+  margin: 0 auto;
+  text-align: right;
+  z-index: 100;
 }
+
 a{
   color: #3700FF;
-
 }
 
 a:link  {
-   text-decoration:  none; 
+  text-decoration:  none; 
 }   
 
 a:hover {
-    color: violet;
+  color: violet;
 }
 
 nav.main-nav a {
-   top: 20px;
-   right: 6px;
-   padding: 8px 8px;
-   font: 16px/2 "Ropa Sans",sans-serif;
+  top: 20px;
+  right: 6px;
+  padding: 8px 8px;
+  font: 16px/2 "Ropa Sans",sans-serif;
 }
 
-
 nav, #header {
-    display: block;
+  display: block;
 }
 
 .profile #header {
-    text-align: center;
-    position: relative;
-    margin-top: 82px;
-    padding-top: 82px;
+  text-align: center;
+  position: relative;
+  margin-top: 82px;
+  padding-top: 82px;
 }
 
-
-
 .profile #circleImage {
-    width: 160px;
-    height: 160px;
-    border-radius: 50%;
-    margin-bottom: 20px;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  margin-bottom: 20px;
 }
 
 body {
-    line-height: 1;
-    margin: 0;
-    font: 16px "Vidaloka",serif;
-    color: #8D3CFF  ;
-    -webkit-font-smoothing: antialiased;
-    text-rendering: optimizeLegibility;
+  line-height: 1;
+  margin: 0;
+  font: 16px "Vidaloka",serif;
+color: #8D3CFF  ;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
-
 
 /*.intro h1 {
   font-weight: 200 !important;
 }*/
 
 h2 {
-    font: 15px/1 "Ropa Sans",sans-serif;
+   font: 15px/1 "Ropa Sans",sans-serif;
     color: #000000  ;
 }
 
@@ -126,11 +122,22 @@ section {
 
 #container {
   overflow-y: hidden;
+
 }
 
 .item {
   float: left;
-  margin: 1em;
+  margin: 1.1em;
+}
+
+@media only screen and (max-width: 500px) {
+  #container {
+        text-align: center;
+    } 
+    .item{
+        float: unset;
+        margin: 1.5em;
+    }
 }
 
 .social {
