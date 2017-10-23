@@ -1,0 +1,30 @@
+
+.c-header_content {
+    position: relative;
+    padding-top:135px;
+    width: 100%;
+}
+
+.c-header_details {
+   position: relative;
+   transform: translateX(-50%);
+   left: 50%;
+   text-align: center;
+}
+
+.c-header_intro {
+    position: relative;
+    line-height: 1.25rem;
+}
+
+.c-header_avatar img {
+    position: relative;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    margin-bottom: 26px;
+}
+
+.c-header_slogan {
+    margin-top: 40px;
+}

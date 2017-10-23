@@ -1,0 +1,181 @@
+@import url(https://fonts.googleapis.com/css?family=Ropa+Sans|Vidaloka);html,
+body {
+  font-size: 16px;
+  height: 100%;
+}
+
+body {
+  line-height: 1.25rem;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  display: block;
+  font-family: "Ropa Sans", sans-serif;
+  background: #f1efef;
+}
+
+body h1 {
+  font-family: "Vidaloka", serif;
+  color: #8D3CFF;
+}
+
+body p {
+  word-spacing: 0.75px;
+  font-size: 15px;
+}
+
+a {
+  color: #3700FF;
+}
+
+a:hover {
+  color: violet;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+.c-nav_content {
+  position: relative;
+  width: 100%;
+  text-align: right;
+  right: 0px;
+  top: 10px;
+  padding: 20px 30px 0;
+}
+
+.c-nav_content a {
+  padding: 5px 10px;
+}
+
+.c-header_content {
+  position: relative;
+  padding-top: 135px;
+  width: 100%;
+}
+
+.c-header_details {
+  position: relative;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  left: 50%;
+  text-align: center;
+}
+
+.c-header_intro {
+  position: relative;
+  line-height: 1.25rem;
+}
+
+.c-header_avatar img {
+  position: relative;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  margin-bottom: 26px;
+}
+
+.c-header_slogan {
+  margin-top: 40px;
+}
+
+.c-page {
+  position: relative;
+}
+
+.c-page_social {
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 40px;
+}
+
+.c-page_project {
+  text-align: center;
+  margin-bottom: 180px;
+}
+
+.c-page_project hr {
+  width: 65%;
+}
+
+.c-page_footer {
+  position: relative;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 5px;
+  text-align: center;
+  background: #FF95FB;
+  width: 100%;
+}
+
+.c-page_footer p {
+  font-size: 12px;
+  color: white;
+}
+
+.c-work_container {
+  position: relative;
+  width: 100%;
+  padding-top: 40px;
+}
+
+.c-work_content {
+  position: relative;
+  left: 50%;
+  width: 100%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.c-work_listitem {
+  margin-bottom: 40px;
+}
+
+.c-work_list {
+  text-align: center;
+}
+
+@media all and (min-width: 575px) {
+  .c-work_listitem {
+    text-align: start;
+    margin-bottom: 45px;
+    padding-left: 16px;
+  }
+
+  .c-work_details {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 15px;
+    margin-left: 8px;
+  }
+
+  .c-work_details img {
+    width: 64px;
+    height: 64px;
+    margin-top: 6px;
+  }
+
+  .c-work_details p {
+    margin: 10px 40px;
+  }
+}
+
+.o-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+

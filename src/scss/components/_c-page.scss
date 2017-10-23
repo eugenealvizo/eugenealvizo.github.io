@@ -1,0 +1,34 @@
+.c-page {
+    position: relative;
+}
+
+.c-page_social {
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 40px
+}
+
+.c-page_project {
+    text-align: center;
+    margin-bottom: 180px;
+
+    hr {
+        width: 65%;
+    }
+}
+
+.c-page_footer {
+    position: relative;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 5px;
+    text-align: center;
+    background: #FF95FB;
+    width: 100%;
+
+    p {
+        font-size: 12px;
+        color: white;
+    }
+}
