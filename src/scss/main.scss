@@ -1,15 +1,17 @@
-@import 'variables/fonts';
+@import "settings/_variables";
+@import "tools/_mixins";
 
-@import 'tools/breakpoint';
+@import "settings/_font";
+@import "settings/_common";
 
-@import 'shared/s-modifier.scss';
+@import "vendor/_vendor";
 
-@import 'components/c-nav.scss';
-@import 'components/c-header.scss';
-@import 'components/c-page.scss';
-@import 'components/c-work.scss';
-@import 'objects/o-container.scss';
+@import "objects/_container";
+@import "objects/_columns";
+@import "objects/_inputs";
+@import "objects/_cursor";
 
+@import "pages/_home";
+@import "vendor/_anim";
 
-
-
+@import "tools/_utils";

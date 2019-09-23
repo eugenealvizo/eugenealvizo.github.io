@@ -1,0 +1,56 @@
+div[class*="o-column-"] {
+    @include maxpoint(tablet) {
+        flex-basis: 100%;
+    }
+}
+.o-column {
+    // Simple Grid - 12 columns in total only
+    // Desktop
+
+    &-0d\@d {
+        display: none;
+    }
+
+    &-0d\@m {
+        @include maxpoint(tablet) {
+            display: none;
+        }
+    }
+    
+    @for $i from 1 through 12 {
+
+        &-#{$i}d\@m {
+         
+
+            @include maxpoint($mobile) {
+                flex-basis: calc( (#{$i} * 100%) / 12 ) !important;       
+            }
+        }
+
+        &-#{$i}d\@t {
+
+             @include maxpoint($tablet) {
+                flex-basis: calc( (#{$i} * 100%) / 12 ) !important;
+            }
+         }   
+
+        &-#{$i}d\@d {
+
+            @include maxpoint($desktop) {
+                flex-basis: calc( (#{$i} * 100%) / 12 ) !important;
+            }
+        }
+
+        &-#{$i}d\@x {
+
+            @include maxpoint($desktop-md) {
+                flex-basis: calc( (#{$i} * 100%) / 12 ) !important;
+            }
+        }
+    }
+}
+
+
+
+    
+
