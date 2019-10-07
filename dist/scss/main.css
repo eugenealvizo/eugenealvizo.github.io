@@ -66,6 +66,10 @@ a:hover {
   transition: color 300ms ease;
 }
 
+.hello.is-highlighted {
+  color: #FF0C8D;
+}
+
 @media (max-width: 768px) {
   .hello {
     font-size: 35px;
@@ -596,6 +600,7 @@ div > p:first-child {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    margin-bottom: 24px;
   }
 
   .segment h1 {
@@ -617,16 +622,8 @@ div > p:first-child {
   white-space: nowrap;
 }
 
-.section--background-2::after {
-  font-family: 'Archivo Black', sans-serif;
-  font-size: 120px;
-  font-weight: 700;
-  content: attr(data-title);
-  position: absolute;
+.segment--background-2:after {
   color: #f7f6f6;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
   z-index: -1;
   width: 1200px;
   text-align: center;

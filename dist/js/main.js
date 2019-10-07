@@ -142,23 +142,35 @@ var Anim = function () {
     }, {
         key: 'bindElements',
         value: function bindElements() {
-            var posX = 590;
-            var posThumb = 0;
-            document.addEventListener('scroll', function (event) {
-                var hello = document.querySelector('.hello');
-                var posY = window.pageYOffset * -1;
-                var posNew = posX + posY * 1.3;
-                if (window.pageYOffset >= 270) {
-                    hello.style.color = '#FF0C8D';
-                } else {
-                    hello.style.color = '#EDEDED';
-                }
-                hello.style.transform = 'translateX(' + posNew + 'px)';
+            var _this = this;
 
-                var scrollThumb = document.getElementById('scrollThumb');
-                var scrollPos = posThumb + window.pageYOffset / 5.5;
-                scrollThumb.style.transform = 'translateY(' + scrollPos + 'px)';
+            document.addEventListener('scroll', function (event) {
+                _this.moveHelloCopy();
+                _this.moveScrollThumb();
             });
+        }
+    }, {
+        key: 'moveHelloCopy',
+        value: function moveHelloCopy() {
+            var posX = 590;
+            var helloView = document.querySelector('.hello');
+            var posY = window.pageYOffset * -1;
+            var posNew = posX + posY * 1.3;
+            if (window.pageYOffset >= 270) {
+                helloView.classList.add('is-highlighted');
+            } else {
+                helloView.classList.remove('is-highlighted');
+            }
+
+            helloView.style.transform = 'translateX(' + posNew + 'px)';
+        }
+    }, {
+        key: 'moveScrollThumb',
+        value: function moveScrollThumb() {
+            var posThumb = 0;
+            var scrollThumbView = document.getElementById('scrollThumb');
+            var scrollPos = posThumb + window.pageYOffset / 7;
+            scrollThumbView.style.transform = 'translateY(' + scrollPos + 'px)';
         }
     }]);
 

@@ -70,6 +70,10 @@ a {
     white-space: nowrap;
     transition: color 300ms ease;
 
+    &.is-highlighted {
+        color: #FF0C8D;
+    }
+
     @include maxpoint(tablet) {
         font-size: 35px;
         transform: translateX(0);
