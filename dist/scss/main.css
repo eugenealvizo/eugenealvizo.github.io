@@ -623,10 +623,11 @@ div > p:first-child {
 }
 
 .segment--background-2:after {
-  color: #f7f6f6;
+  color: #ececec;
   z-index: -1;
   width: 1200px;
   text-align: center;
+  white-space: unset;
 }
 
 .scroll-thumb {
