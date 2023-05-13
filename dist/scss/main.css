@@ -107,10 +107,10 @@ body {
   scroll-behavior: smooth;
 }
 
-html ::-webkit-scrollbar,
+/* html ::-webkit-scrollbar,
 body ::-webkit-scrollbar {
   display: none;
-}
+} */
 
 main {
   min-height: 100%;
